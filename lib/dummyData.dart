@@ -1,44 +1,60 @@
 class DummyData {
+  final String projectTitle;
+  final String description;
+  final String date;
+  final String image;
+  final String owner;
 
-
-
-
-
-  List<Map<String, dynamic>> dummyData = [
-    {
-      'project title': 'TripMate',
-      'project description': 'This is a project description',
-      'image': 'assets/images/image.png',
-      'date': '2021-10-10',
-      'Owner': 'John Doe',
-    },
-    {
-      'project title': 'Finance App',
-      'project description': 'This is a project description',
-      'image': 'assets/images/image.png',
-      'date': '2021-10-10',
-      'Owner': 'John Doe',
-    },
-    {
-      'project title': 'Health App',
-      'project description': 'This is a project description',
-      'image': 'assets/images/image.png',
-      'date': '2021-10-10',
-      'Owner': 'John Doe',
-    },
-    {
-      'project title': 'Travel App',
-      'project description': 'This is a project description',
-      'image': 'assets/images/image.png',
-      'date': '2021-10-10',
-      'Owner': 'John Doe',
-    },
-    {
-      'project title': 'Food App',
-      'project description': 'This is a project description',
-      'image': 'assets/images/image.png',
-      'date': '2021-10-10',
-      'Owner': 'John Doe',
-    },
-  ];
+  const DummyData({
+    required this.projectTitle,
+    required this.description,
+    required this.date,
+    required this.image,
+    required this.owner,
+  });
 }
+
+const dummyData = [
+  DummyData(
+    projectTitle: 'Finance App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+  DummyData(
+    projectTitle: 'E-commerce App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+  DummyData(
+    projectTitle: 'Social Media App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+  DummyData(
+    projectTitle: 'Travel App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+  DummyData(
+    projectTitle: 'Health App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+  DummyData(
+    projectTitle: 'Education App',
+    description: 'This is a project',
+    date: '12/12/2021',
+    image: 'assets/images/image.png',
+    owner: 'John Doe',
+  ),
+];

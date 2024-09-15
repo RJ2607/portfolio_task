@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:portfolio_task/navBarMenu.dart';
-
-import 'views/portfolio/portfolioView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
         designSize: Size(375, 812),
         splitScreenMode: true,
         minTextAdapt: true,
-        builder: (context, child) => MaterialApp(
+        builder: (context, child) => GetMaterialApp(
           title: 'TripMate',
           theme: ThemeData.light(),
           home: child,
